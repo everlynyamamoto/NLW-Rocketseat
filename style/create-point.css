@@ -1,0 +1,115 @@
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+/* elementos menu "Ecoleta" e "voltarpara home" alinhados lado a lado*/
+#page-create-point header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+/* colocando icone ao lado do botao "voltar para home"*/
+#page-create-point header a {
+    align-items: center;
+    color: var(--title-color);
+    display: flex;
+    font-weight: bold;
+}
+/*adicionando icon de voltar*/
+#page-create-point header a span {
+    background-image: url('../asset/arrow-left.svg');
+    display: flex;
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+/* criando caixa pro formulario*/
+form {
+    background-color: white;
+    border-radius: 8px; 
+    margin: 80px auto;
+    margin-top: 80px;
+    max-width: 730px;
+    padding: 64px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+
+form legend {
+margin-bottom: 40px;
+
+}
+
+form legend h2 {
+    font: size 24px;
+}
+/* campos de pergunta lado a lado*/
+form .field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+/* campos de resposta lado a lado*/
+form .field-group {
+    display: flex;
+    
+}
+/*caixa de reposta do formulario*/
+form input,
+form select {
+    background-color: #f0f0f5;
+    border: 0;
+    border-radius: 8px;
+    padding: 16px 24px;
+
+    /*tirar marcação em volta do campo
+    outline: none; */
+}
+
+form select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+
+}
+/*pegar apenas um campo do formulario*/
+form .field-group .field + .field {
+    margin-left: 24px;
+}
+
+
+form button {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 56px;
+    margin-top: 40px;
+    /* para especificar que é somente transição de cor e nao ao recarregar a pagina*/
+    transition: background-color 400ms;
+    width: 260px;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
